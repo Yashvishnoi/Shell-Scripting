@@ -1,2 +1,2 @@
-myName = "Users!"
+myName="Users!"
 echo "Hello ${myName}"

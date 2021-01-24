@@ -1,5 +1,5 @@
-count="9"
-while [ $count -gt 0 ]; do
+count="1"
+while [ $count -lt 11 ]; do
 	echo "$count"
-	count=$[$count-1]
+	count=$[$count+1]
 done

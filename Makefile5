@@ -1,0 +1,12 @@
+SHELL = /bin/bash
+LOGDIR = /home/yash/Desktop/Scripting/sourcecode/logdir
+LOGEXT = log
+BACKUPDIR = /home/yash/Desktop/Scripting/sourcecode/backupdir
+start: createarchive movearchive deletelogs
+	echo "Logs files are archived and deleted"
+createarchive:
+	tar czf archive.tar.gz 1.log
+movearchive:
+	mv archive.tar.gz $(BACKUPDIR)/$(date +%F).tar.gz
+deletelogs:
+	rm 1.log
